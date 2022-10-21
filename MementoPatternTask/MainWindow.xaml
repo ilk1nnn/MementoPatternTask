@@ -1,0 +1,63 @@
+﻿<Window x:Class="MementoPatternTask.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MementoPatternTask"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="MediumPurple">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="6*"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <Grid Grid.Row="0">
+            <Image Name="screenimg" Width="700" Height="350">
+                
+            </Image>
+        </Grid>
+        
+        
+        
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+
+            <Grid Grid.Column="1">
+                <Button Background="Aqua" Foreground="Black" Content="ScreenShot" FontSize="30" Click="Button_Click"></Button>
+            </Grid>
+            
+            <Grid Grid.Column="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Grid Grid.Column="0">
+                    <Button Content="Previous"  FontSize="20" Click="Button_Click_1"></Button>
+                </Grid>
+
+                <Grid Grid.Column="1">
+                    <Button Content="Next" FontSize="20" Click="Button_Click_2"></Button>
+                </Grid>
+                
+            </Grid>
+            
+        </Grid>
+
+
+        
+        
+        
+        
+        
+    </Grid>
+</Window>
